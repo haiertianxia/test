@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Default Suite" preserve-order="true">
+    <listeners>
+        <listener class-name="runner.ExtentReporterNGListener"/>
+        <listener class-name="runner.TestngListener"/>
+        <listener class-name="runner.RetryListener"/>
+    </listeners>
+
+    <test name="PayWap">
+        <parameter name="driverType" value="chrome"/>
+        <classes>
+           <class name="com.xl.PayWapSuperVIPTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="com.xl.PayWapBaiJinTest">
+            <methods>
+                <include name="login"/>
+            </methods>
+            </class>
+            <class name="com.xl.PayWapQuickBirdTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="com.xl.PayWapGameTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="com.xl.PayWapHighGameTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+            </class>
+            <class name="com.xl.PhotoDigestTest">
+                <methods>
+                    <include name="compareImage"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,5 @@
+tmp/
+.idea
+/failTmp/
+/target/
+/test-output/
